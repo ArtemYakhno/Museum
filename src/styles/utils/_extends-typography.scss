@@ -1,0 +1,68 @@
+%h1 {
+  font: inherit;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: $main-text-color;
+  @include on-tablet {
+    font-size: 54px;
+    line-height: 120%;
+  }
+  @include on-desktop {
+    font-size: 72px;
+  }
+}
+%h2 {
+  font: inherit;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: $main-text-color;
+  @include on-tablet {
+    font-size: 54px;
+    line-height: 120%;
+  }
+  @include on-desktop {
+    font-size: 72px;
+  }
+}
+%h4 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: $second-text-color;
+}
+
+%before-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: $adition-text-color;
+}
+
+%nav-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-decoration: none;
+  color: #fff;
+  @include on-desktop {
+    font-size: 22px;
+  }
+}
+
+%schedule-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0 ;
+}

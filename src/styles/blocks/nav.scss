@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  column-gap: 28px;
+  @include on-tablet{
+    column-gap: 20px;
+  }
+    @include on-desktop{
+    column-gap: 60px;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 24px;
+  }
+
+  &__link {
+    @extend %nav-text;
+    display: block;
+    &:hover::after {
+      transform: scale(1);
+    }
+  }
+}

@@ -1,19 +1,161 @@
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="page"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Title</title>
+    <title>NAMU</title>
     <link
       rel="stylesheet"
       href="./styles/main.scss"
     />
+    <link
+      rel="icon"
+      type="image/svg"
+      href="images/icons/NA MU.svg"
+    />
+    <script
+      src="scripts/main.js"
+      defer
+    ></script>
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script src="scripts/main.js"></script>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__left-side">
+        <div class="header__burger header__burger--desktop">
+          <a
+            href="#menu"
+            class="icon icon--burger"
+          ></a>
+        </div>
+
+        <h1 class="header__text-logo">ХУДОЖНІЙ МУЗЕЙ</h1>
+        <div class="header__tickets-events">
+          <a
+            href="#"
+            class="header__button"
+          >
+            <h4 class="header__tickets">Квитки</h4>
+            <div class="header__interaction"></div>
+          </a>
+          <div class="header__events"></div>
+        </div>
+      </div>
+      <div class="header__right-side">
+        <div class="header__up-side">
+          <div class="header__burger header__burger--mobile">
+            <a
+              href="#menu"
+              class="icon icon--burger"
+            ></a>
+          </div>
+          <a
+            href="#"
+            class="header__logo"
+          >
+            <img
+              src="./images/Icons/NA MU.svg"
+              alt="NAMU"
+            />
+          </a>
+          <div></div>
+        </div>
+      </div>
+    </header>
+    <aside
+      class="page__menu"
+      id="menu"
+    >
+      <div class="menu">
+        <div class="container menu__container">
+          <div class="menu__content">
+            <div class="menu__left-side">
+              <a
+                href="#"
+                class="menu__close icon icon--close"
+              ></a>
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a
+                      class="nav__link"
+                      href="#"
+                    >
+                      Галерея
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a
+                      class="nav__link"
+                      href="#"
+                    >
+                      Виставки та події
+                    </a>
+                  </li>
+                </ul>
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a
+                      class="nav__link"
+                      href="#"
+                    >
+                      Про Нас
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a
+                      class="nav__link"
+                      href="#"
+                    >
+                      Контакти
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="menu__center-side"></div>
+            <div class="menu__right-side schedule">
+              <div class="schedule__top">Графік роботи</div>
+              <div class="schedule__bottom">
+                <div class="schedule__work-days">
+                  <p>
+                    <strong>12:00 — 20:00</strong>
+                    <span class="schedule__time-day">середа</span>
+                  </p>
+                  <p>
+                    <strong>12:00 — 20:00</strong>
+                    <span class="schedule__time-day">четверг</span>
+                  </p>
+                  <p>
+                    <strong>12:00 — 20:00</strong>
+                    <span class="schedule__time-day">п'ятниця</span>
+                  </p>
+                  <p>
+                    <strong>11:00 — 19:00</strong>
+                    <span class="schedule__time-day">субота</span>
+                  </p>
+                  <p>
+                    <strong>11:00 — 19:00</strong>
+                    <span class="schedule__time-day">неділя</span>
+                  </p>
+                </div>
+                <div class="schedule__days-off">
+                  <p>
+                    <strong>Вихідні:</strong>
+                    понеділок, вівторок
+                  </p>
+                  <p>Каса припиняє роботу за 1 годину до закриття музею</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
   </body>
 </html>
