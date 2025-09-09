@@ -2,10 +2,12 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+
   @include on-tablet {
     flex-direction: row;
     column-gap: 20px;
   }
+
   @include on-desktop {
     max-width: 1280px;
     margin: auto;
@@ -21,13 +23,15 @@
     flex-direction: column;
     justify-content: space-between;
     row-gap: 20px;
+
     @include on-tablet {
       order: 0;
       width: auto;
       padding-left: 34px;
-      padding-right: 0px;
+      padding-right: 0;
       padding-top: 39px;
     }
+
     @include on-desktop {
       padding-left: 55px;
     }
@@ -35,11 +39,14 @@
 
   &__text-logo {
     @extend %h1;
+
     text-align: center;
+
     @include on-tablet {
       max-width: 340px;
       text-align: left;
     }
+
     @include on-desktop {
       max-width: 470px;
     }
@@ -57,9 +64,11 @@
     display: flex;
     align-items: center;
     text-decoration: none;
+
     @include on-tablet {
       width: 270px;
     }
+
     @include on-desktop {
       position: absolute;
       right: 0;
@@ -67,8 +76,11 @@
   }
   &__tickets {
     flex-grow: 1;
+
     text-align: center;
+
     @extend %h4;
+
     text-transform: uppercase;
   }
   &__interaction {
@@ -78,7 +90,9 @@
     background-image: url(../images/Icons/shevron-right.svg);
     background-repeat: no-repeat;
     background-position: center;
+
     @include hover(transform, rotate(-90deg));
+
     @include on-tablet {
       width: 70px;
       height: 70px;
@@ -87,7 +101,9 @@
 
   &__events {
     display: none;
+    
     @extend %before-text;
+
     @include on-desktop {
       display: block;
       position: absolute;
@@ -139,7 +155,9 @@
   &__logo {
     width: 55px;
     height: 61px;
+
     @include hover(transform, scale(1.2));
+
     @include on-desktop {
       height: 72px;
     }
@@ -152,6 +170,7 @@
   }
   &__burger--desktop {
     display: none;
+
     @include on-tablet {
       display: block;
     }

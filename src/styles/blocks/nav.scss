@@ -1,10 +1,12 @@
 .nav {
   display: flex;
   column-gap: 28px;
-  @include on-tablet{
+
+  @include on-tablet {
     column-gap: 20px;
   }
-    @include on-desktop{
+
+  @include on-desktop {
     column-gap: 60px;
   }
   &__list {
@@ -20,6 +22,7 @@
 
   &__link {
     @extend %nav-text;
+    
     display: block;
     &:hover::after {
       transform: scale(1);

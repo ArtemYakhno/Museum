@@ -3,6 +3,7 @@
   width: 24px;
   height: 24px;
   background-size: cover;
+  
   @include hover(transform, scale(1.2));
 
   &--burger {
