@@ -6,6 +6,7 @@
   @include on-tablet {
     flex-direction: row;
     column-gap: 20px;
+    height: 100vh;
   }
 
   @include on-desktop {
@@ -27,13 +28,12 @@
     @include on-tablet {
       order: 0;
       width: auto;
-      padding-left: 34px;
-      padding-right: 0;
-      padding-top: 39px;
+      padding: 40px 0 34px 20px;
     }
 
     @include on-desktop {
       padding-left: 55px;
+      padding-bottom: 0;
     }
   }
 
@@ -53,6 +53,8 @@
   }
 
   &__tickets-events {
+    box-sizing: border-box;
+
     @include on-desktop {
       height: 188px;
       position: relative;
@@ -79,7 +81,7 @@
 
     text-align: center;
 
-    @extend %h4;
+    @extend %fm-imb-fw-500-fz-16-lh-100;
 
     text-transform: uppercase;
   }
@@ -101,8 +103,8 @@
 
   &__events {
     display: none;
-    
-    @extend %before-text;
+
+    @extend %fm-imb-fw-700-fz-14-lh-100;
 
     @include on-desktop {
       display: block;
@@ -142,6 +144,7 @@
       flex-grow: 1;
       padding-inline: 80px;
       padding-top: 15px;
+      aspect-ratio: 0;
     }
   }
 

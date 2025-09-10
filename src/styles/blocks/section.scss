@@ -1,7 +1,13 @@
 .section {
+  margin-bottom: 100px;
+  
+  @include on-desktop{
+    margin-bottom: 200px;
+  }
+
   &__title {
     @extend %h2;
-    
+
     margin-bottom: 40px;
     text-align: center;
 
