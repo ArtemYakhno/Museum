@@ -1,0 +1,13 @@
+.section {
+  &__title {
+    @extend %h2;
+    
+    margin-bottom: 40px;
+    text-align: center;
+
+    @include on-tablet {
+      text-align: left;
+      margin-bottom: 48px;
+    }
+  }
+}

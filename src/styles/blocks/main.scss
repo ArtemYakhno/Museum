@@ -1,0 +1,11 @@
+.main{
+  padding-top: 70px;
+
+  @include on-tablet{
+     padding-top: 88;
+  }
+  
+    @include on-desktop{
+     padding-top: 200;
+  }
+}
