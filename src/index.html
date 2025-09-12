@@ -79,11 +79,14 @@
                 href="#"
                 class="menu__close icon icon--close"
               ></a>
-              <nav class="nav">
-                <ul class="nav__list">
+              <nav
+                aria-label="Головне меню"
+                class="nav nav--header"
+              >
+                <ul class="nav__list nav__list--header">
                   <li class="nav__item">
                     <a
-                      class="nav__link"
+                      class="nav__link nav__link--header"
                       href="#"
                     >
                       Галерея
@@ -91,17 +94,17 @@
                   </li>
                   <li class="nav__item">
                     <a
-                      class="nav__link"
+                      class="nav__link nav__link--header"
                       href="#"
                     >
                       Виставки та події
                     </a>
                   </li>
                 </ul>
-                <ul class="nav__list">
+                <ul class="nav__list nav__list--header">
                   <li class="nav__item">
                     <a
-                      class="nav__link"
+                      class="nav__link nav__link--header"
                       href="#"
                     >
                       Про Нас
@@ -109,7 +112,7 @@
                   </li>
                   <li class="nav__item">
                     <a
-                      class="nav__link"
+                      class="nav__link nav__link--header"
                       href="#"
                     >
                       Контакти
@@ -121,7 +124,7 @@
             <div class="menu__center-side"></div>
             <div class="menu__right-side schedule">
               <div class="schedule__top">Графік роботи</div>
-              <div class="schedule__bottom">
+              <div class="schedule__bottom schedule__bottom--header">
                 <div class="schedule__work-days">
                   <p>
                     <strong>12:00 — 20:00</strong>
@@ -233,6 +236,148 @@
           </article>
         </div>
       </section>
+      <section class="section subscription">
+        <div class="container">
+          <div class="subscription__content">
+            <form class="subscription__form">
+              <h2 class="subscription__title">Підписка</h2>
+              <p class="subscription__info">
+                Бути в курсі всіх актуальних подій та останніх новин.
+              </p>
+              <div class="subscription__email">
+                <input
+                  class="subscription__input"
+                  type="email"
+                  required
+                  placeholder="E-mail"
+                  name="email"
+                />
+                <button class="subscription__target"></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer__logo-socials">
+        <a
+          href="#"
+          class="footser__logo-link"
+        >
+          <img
+            class="footer__logo"
+            src="./images/Icons/NA MU.svg"
+            alt="NAMU"
+          />
+        </a>
+
+        <div class="footer__socials">
+          <a
+            href="#"
+            class="icon icon--facebook"
+          ></a>
+          <a
+            href="#"
+            class="icon icon--instagram"
+          ></a>
+        </div>
+      </div>
+      <div class="footer__schedule schedule">
+        <div class="schedule__top">Графік роботи</div>
+        <div class="schedule__bottom">
+          <div class="schedule__work-days">
+            <p>
+              <strong>12:00 — 20:00</strong>
+              <span class="schedule__time-day">середа</span>
+            </p>
+            <p>
+              <strong>12:00 — 20:00</strong>
+              <span class="schedule__time-day">четверг</span>
+            </p>
+            <p>
+              <strong>12:00 — 20:00</strong>
+              <span class="schedule__time-day">п'ятниця</span>
+            </p>
+            <p>
+              <strong>11:00 — 19:00</strong>
+              <span class="schedule__time-day">субота</span>
+            </p>
+            <p>
+              <strong>11:00 — 19:00</strong>
+              <span class="schedule__time-day">неділя</span>
+            </p>
+          </div>
+          <div class="schedule__days-off">
+            <p>
+              <strong>Вихідні:</strong>
+              понеділок, вівторок
+            </p>
+            <p>Каса припиняє роботу за 1 годину до закриття музею</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__contact">
+        <div class="footer__contant-top">Контакти</div>
+        <a
+          href="https://www.google.com/maps/place/вулиця+Михайла+Грушевського,+6,+Київ,+02000/data=!4m2!3m1!1s0x40d4ce52445a8315:0x5e30ef474eddac89?sa=X&ved=1t:242&ictx=111"
+          class="footer__contant-info"
+          target="_blank"
+        >
+          вул. М. Грушевського, 6; Київ, 01001 тел. +38 (044) 278-13-57 факс +38
+          (044) 278-74-54 e-mail: info@namu.kiev.ua
+        </a>
+        <div class="footer__go-up"></div>
+      </div>
+
+      <div class="footer__center"></div>
+
+      <nav
+        aria-label="Навігація у футері"
+        class="footer__nav nav nav--footer"
+      >
+        <ul class="nav__list nav__list--footer">
+          <li class="nav__item">
+            <a
+              class="nav__link nav__link--footer"
+              href="#"
+            >
+              Галерея
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              class="nav__link nav__link--footer"
+              href="#"
+            >
+              Виставки та події
+            </a>
+          </li>
+        </ul>
+        <ul class="nav__list nav__list--footer">
+          <li class="nav__item">
+            <a
+              class="nav__link nav__link--footer"
+              href="#"
+            >
+              Про Нас
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              class="nav__link nav__link--footer"
+              href="#"
+            >
+              Контакти
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__adition-info">
+        <p class="footer__designed">Designed by Zhyriada Marina</p>
+        <p class="footer__copyright">Copyright © 2019. All Rights Reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

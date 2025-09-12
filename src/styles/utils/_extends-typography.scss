@@ -76,7 +76,16 @@
   color: $third-text-color;
 }
 
-%nav-text {
+%fm-imb-fw-300-fz-12-lh-140 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0;
+  color: $main-text-color;
+}
+
+%nav-header-text {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -89,6 +98,15 @@
     font-size: 22px;
   }
 }
+%nav-footer-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-decoration: none;
+  color: $main-text-color;
+}
 
 %schedule-text {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -96,4 +114,45 @@
   font-size: 14px;
   line-height: 150%;
   letter-spacing: 0;
+}
+
+%fm-imb-fw-400-fz-18-lh-150 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #fff;
+
+    @include on-tablet {
+   line-height: 100%;
+  }
+}
+
+%input-main {
+  display: block;
+  font-family: inherit;
+  box-sizing: border-box;
+  border: 0;
+  background-color: #fff;
+  color: $main-text-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  outline: none;
+  transition: border-color, $effect-duration;
+  padding: 18px 24px;
+  max-height: 50px;
+
+  @include on-tablet {
+    padding: 28px 24px;
+     max-height: 70px;
+  }
+
+  @include on-desktop {
+    padding: 28px 32px;
+  }
+  &::placeholder {
+    color: $adition-text-color;
+  }
 }

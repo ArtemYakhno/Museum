@@ -7,10 +7,12 @@
 
     @include on-tablet {
       height: 390px;
+       padding-bottom: 0;
     }
 
     @include on-desktop {
       height: 550px;
+       padding-bottom: 0;
     }
   }
   &__details {
@@ -42,7 +44,7 @@
     display: flex;
     justify-content: space-between;
     padding-inline: 20px;
-    
+
     @include on-tablet {
       justify-content: start;
       column-gap: 160px;

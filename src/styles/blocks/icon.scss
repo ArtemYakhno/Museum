@@ -3,7 +3,7 @@
   width: 24px;
   height: 24px;
   background-size: cover;
-  
+
   @include hover(transform, scale(1.2));
 
   &--burger {
@@ -14,5 +14,11 @@
   }
   &--close {
     background-image: url(../images/icons/Icon-Close.svg);
+  }
+  &--facebook{
+    background-image: url(../images/Icons/facebook-letter-logo.svg);
+  }
+    &--instagram{
+    background-image: url(../images/Icons/instagram.svg);
   }
 }
