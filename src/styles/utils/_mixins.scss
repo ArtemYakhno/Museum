@@ -17,6 +17,14 @@
   }
 }
 
+@mixin on-mobile {
+  @media (max-width: $tablet-min-width) {
+    @content;
+  }
+}
+
+
+
 @mixin page-grid {
   --columns: 2;
 
@@ -27,7 +35,6 @@
 
   @include on-tablet {
     column-gap: 30px;
-
     --columns: 6;
   }
 
@@ -38,7 +45,7 @@
 
 @mixin padding-inline {
   padding-inline: 20px;
-  
+
   @include on-tablet {
     padding-inline: 34px;
   }
@@ -47,3 +54,4 @@
     padding-inline: 55px;
   }
 }
+

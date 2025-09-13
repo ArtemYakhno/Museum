@@ -1,6 +1,5 @@
 .container {
   @include padding-inline;
-  
   box-sizing: border-box;
 
   @include on-desktop {
