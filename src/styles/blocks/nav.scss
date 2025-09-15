@@ -47,11 +47,36 @@
   }
 
   &__link {
+    --back-color: #fff;
+
+    position: relative;
+
     &--header {
       @extend %nav-header-text;
     }
+
     &--footer {
       @extend %nav-footer-text;
+      
+      --back-color: #0f0e08;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4;
+      width: 100%;
+      height: 1px;
+      background-color: var(--back-color);
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 240ms ease $effect-duration;
+    }
+
+    // ховер: розгортання лінії
+    &:hover::before {
+      transform: scaleX(1);
     }
   }
 }

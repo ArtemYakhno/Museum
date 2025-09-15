@@ -41,6 +41,8 @@
     display: block;
     width: 70px;
     height: 72px;
+
+    @include hover(transform, scale(1.2));
   }
 
   &__socials {
@@ -84,6 +86,9 @@
   &__contant-info {
     color: $main-text-color;
     text-decoration: none;
+    font-weight: 400;
+
+    @include hover(font-weight, 600);
   }
 
   &__go-up {

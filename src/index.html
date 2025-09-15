@@ -19,10 +19,6 @@
       type="image/svg"
       href="images/icons/NA MU.svg"
     />
-    <script
-      src="scripts/main.js"
-      defer
-    ></script>
   </head>
   <body class="page__body">
     <header class="header">
@@ -37,13 +33,16 @@
         <h1 class="header__text-logo">ХУДОЖНІЙ МУЗЕЙ</h1>
         <div class="header__tickets-events">
           <a
-            href="#"
+            href="#actual-events "
             class="header__button"
           >
             <p class="header__tickets">Квитки</p>
             <div class="header__interaction"></div>
           </a>
-          <div class="header__events"></div>
+          <a
+            href="#actual-events"
+            class="header__events"
+          ></a>
         </div>
       </div>
       <div class="header__right-side">
@@ -87,7 +86,7 @@
                   <li class="nav__item">
                     <a
                       class="nav__link nav__link--header"
-                      href="#"
+                      href="#gallery"
                     >
                       Галерея
                     </a>
@@ -95,7 +94,7 @@
                   <li class="nav__item">
                     <a
                       class="nav__link nav__link--header"
-                      href="#"
+                      href="#actual-events"
                     >
                       Виставки та події
                     </a>
@@ -105,7 +104,7 @@
                   <li class="nav__item">
                     <a
                       class="nav__link nav__link--header"
-                      href="#"
+                      href="#about-us"
                     >
                       Про Нас
                     </a>
@@ -113,7 +112,7 @@
                   <li class="nav__item">
                     <a
                       class="nav__link nav__link--header"
-                      href="#"
+                      href="#contacts"
                     >
                       Контакти
                     </a>
@@ -237,47 +236,83 @@
         </div>
       </section>
 
-      <section class="section gallery">
+      <section
+        id="gallery"
+        class="section gallery"
+      >
         <div class="container">
           <h2 class="section__title">Галерея</h2>
+          <div class="gallery__content">
+            <img
+              src="./images/galery/ukraine-woman.png"
+              alt="ukraine-woman"
+              class="gallery__photo gallery__photo--short gallery__photo--tall"
+            />
+            <img
+              src="./images/galery/home.png"
+              alt="home"
+              class="gallery__photo gallery__photo--long gallery__photo--tall"
+            />
+            <img
+              src="./images/galery/chair.png"
+              alt="chair"
+              class="gallery__photo gallery__photo--long gallery__photo--small"
+            />
+            <img
+              src="./images/galery/sea.png"
+              alt="sea"
+              class="gallery__photo gallery__photo--short gallery__photo--small"
+            />
+          </div>
           <div class="swiper">
-            <div class="swiper__slide swiper__slide--short swiper__slide--tall">
-              <img
-                src="./images/galery/ukraine-woman.png"
-                alt="ukraine-woman"
-                class="swiper__photo"
-              />
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./images/galery/ukraine-woman.png"
+                  alt="ukraine-woman"
+                  class="swiper__photo"
+                />
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="./images/galery/home.png"
+                  alt="home"
+                  class="swiper__photo"
+                />
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="./images/galery/chair.png"
+                  alt="chair"
+                  class="swiper__photo"
+                />
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="./images/galery/sea.png"
+                  alt="sea"
+                  class="swiper__photo"
+                />
+              </div>
             </div>
-            <div class="swiper__slide swiper__slide--long swiper__slide--tall">
-              <img
-                src="./images/galery/home.png"
-                alt="home"
-                class="swiper__photo"
-              />
-            </div>
-            <div class="swiper__slide swiper__slide--long swiper__slide--small">
-              <img
-                src="./images/galery/chair.png"
-                alt="chair"
-                class="swiper__photo"
-              />
-            </div>
-            <div
-              class="swiper__slide swiper__slide--short swiper__slide--small"
-            >
-              <img
-                src="./images/galery/sea.png"
-                alt="sea"
-                class="swiper__photo"
-              />
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
-      <section class="section subscription">
+      <section
+        id="about-us"
+        class="section subscription"
+      >
         <div class="container">
           <div class="subscription__content">
-            <form class="subscription__form">
+            <form
+              class="subscription__form"
+              method="post"
+              onsubmit="this.reset(); return false;"
+            >
               <h2 class="subscription__title">Підписка</h2>
               <p class="subscription__info">
                 Бути в курсі всіх актуальних подій та останніх новин.
@@ -312,12 +347,14 @@
 
         <div class="footer__socials">
           <a
-            href="#"
+            href="https://www.facebook.com/"
             class="icon icon--facebook"
+            target="_blank"
           ></a>
           <a
-            href="#"
+            href="https://www.instagram.com/"
             class="icon icon--instagram"
+            target="_blank"
           ></a>
         </div>
       </div>
@@ -356,7 +393,10 @@
         </div>
       </div>
 
-      <div class="footer__contact">
+      <div
+        id="contacts"
+        class="footer__contact"
+      >
         <div class="footer__contant-top">Контакти</div>
         <a
           href="https://www.google.com/maps/place/вулиця+Михайла+Грушевського,+6,+Київ,+02000/data=!4m2!3m1!1s0x40d4ce52445a8315:0x5e30ef474eddac89?sa=X&ved=1t:242&ictx=111"
@@ -366,7 +406,10 @@
           вул. М. Грушевського, 6; Київ, 01001 тел. +38 (044) 278-13-57 факс +38
           (044) 278-74-54 e-mail: info@namu.kiev.ua
         </a>
-        <div class="footer__go-up"></div>
+        <a
+          href="#"
+          class="footer__go-up"
+        ></a>
       </div>
 
       <div class="footer__center"></div>
@@ -379,7 +422,7 @@
           <li class="nav__item">
             <a
               class="nav__link nav__link--footer"
-              href="#"
+              href="#gallery"
             >
               Галерея
             </a>
@@ -387,7 +430,7 @@
           <li class="nav__item">
             <a
               class="nav__link nav__link--footer"
-              href="#"
+              href="#actual-events"
             >
               Виставки та події
             </a>
@@ -397,7 +440,7 @@
           <li class="nav__item">
             <a
               class="nav__link nav__link--footer"
-              href="#"
+              href="#about-us"
             >
               Про Нас
             </a>
@@ -405,7 +448,7 @@
           <li class="nav__item">
             <a
               class="nav__link nav__link--footer"
-              href="#"
+              href="#contacts"
             >
               Контакти
             </a>
@@ -414,15 +457,14 @@
       </nav>
       <div class="footer__adition-info">
         <p class="footer__designed">Designed by Zhyriada Marina</p>
-        <p class="footer__copyright">Copyright © 2019. All Rights Reserved.</p>
+        <p class="footer__copyright">Copyright © 2025. All Rights Reserved.</p>
       </div>
     </footer>
-    <section>
-      <div class="flex">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-      </div>
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script
+      src="scripts/main.js"
+      type="module"
+      defer
+    ></script>
   </body>
 </html>

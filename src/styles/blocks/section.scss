@@ -1,4 +1,5 @@
 .section {
+  min-width: 0;
   &__title {
     @extend %h2;
 
