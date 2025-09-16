@@ -1,20 +1,19 @@
 .footer {
-  @include padding-inline;
+  &__content {
+    padding-block: 50px;
 
-  box-sizing: border-box;
-  padding-block: 50px;
+    @include page-grid;
 
-  @include page-grid;
+    grid-template-rows: repeat(5, auto);
 
-  grid-template-rows: repeat(5, auto);
+    @include on-tablet {
+      grid-template-rows: repeat(4, auto);
+    }
 
-  @include on-tablet {
-    grid-template-rows: repeat(4, auto);
-  }
-
-  @include on-desktop {
-    grid-template-rows: repeat(2, auto);
-    row-gap: 98px;
+    @include on-desktop {
+      grid-template-rows: repeat(2, auto);
+      row-gap: 98px;
+    }
   }
 
   &__logo-socials {
@@ -83,12 +82,23 @@
     }
   }
 
-  &__contant-info {
+  &__contact-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+  }
+
+  &__contact-data {
     color: $main-text-color;
     text-decoration: none;
     font-weight: 400;
+    font-size: 14px;
+    
+    @include hover(font-weight, 500);
 
-    @include hover(font-weight, 600);
+    &--email {
+      white-space: nowrap;
+    }
   }
 
   &__go-up {
