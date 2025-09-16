@@ -9,7 +9,7 @@
     height: 510px;
     display: block;
     object-fit: cover;
-    
+
     @include on-tablet {
       height: 543px;
     }

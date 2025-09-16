@@ -124,8 +124,8 @@
   letter-spacing: 0;
   color: #fff;
 
-    @include on-tablet {
-   line-height: 100%;
+  @include on-tablet {
+    line-height: 100%;
   }
 }
 
@@ -146,7 +146,7 @@
 
   @include on-tablet {
     padding: 28px 24px;
-     max-height: 70px;
+    max-height: 70px;
   }
 
   @include on-desktop {

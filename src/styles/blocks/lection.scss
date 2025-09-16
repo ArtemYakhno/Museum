@@ -7,12 +7,12 @@
 
     @include on-tablet {
       height: 390px;
-       padding-bottom: 0;
+      padding-bottom: 0;
     }
 
     @include on-desktop {
       height: 550px;
-       padding-bottom: 0;
+      padding-bottom: 0;
     }
   }
   &__details {
@@ -36,7 +36,7 @@
       row-gap: 24px;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       row-gap: 16px;
     }
   }
@@ -70,7 +70,6 @@
 
     @include on-tablet {
       text-align: start;
-
     }
   }
   &__title {
@@ -81,6 +80,5 @@
     @include on-tablet {
       text-align: start;
     }
-
   }
 }

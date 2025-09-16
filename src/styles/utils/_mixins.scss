@@ -23,8 +23,6 @@
   }
 }
 
-
-
 @mixin page-grid {
   --columns: 2;
 
@@ -35,6 +33,7 @@
 
   @include on-tablet {
     column-gap: 30px;
+
     --columns: 6;
   }
 
@@ -54,4 +53,3 @@
     padding-inline: 55px;
   }
 }
-
