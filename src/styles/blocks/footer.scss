@@ -136,10 +136,6 @@
       margin-bottom: 120px;
     }
 
-    @include on-tablet {
-      margin-bottom: 120px;
-    }
-
     @include on-desktop {
       grid-column: 8/12;
       margin-bottom: 0;
